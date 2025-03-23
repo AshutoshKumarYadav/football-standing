@@ -40,12 +40,12 @@ jobs:
 
       # Step 5: Install dependencies for the frontend
       - name: Install frontend dependencies
-        working-directory: ./frontend
+        working-directory: .
         run: npm install
 
       # Step 6: Run frontend tests
       - name: Run frontend tests
-        working-directory: ./frontend
+        working-directory: .
         run: npm test
 
   deploy:
