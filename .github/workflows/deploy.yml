@@ -28,6 +28,10 @@ jobs:
       - name: Install backend dependencies
         working-directory: ./backend
         run: npm install
+      
+      # Ensure Jest is installed globally
+      - name: Install Jest globally
+        run: npm install -g jest  
 
       # Step 4: Run backend tests
       - name: Run backend tests
